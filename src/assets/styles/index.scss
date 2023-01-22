@@ -1,8 +1,8 @@
 @import "./fonts/index.scss";
-// @import "./resources";
+@import "./resources.scss";
 
 body {
-  background: #1a1622;
+  background: $background_page;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 16px;

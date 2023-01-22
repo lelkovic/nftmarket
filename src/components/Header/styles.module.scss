@@ -3,5 +3,24 @@
 .header {
     p {
         font-family: "Poppins";
-    }  
+    }
+    
+    button {
+        padding: 12px 16px;
+        border-radius: 90px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__wbtn {
+        background-color: transparent;
+        color: $text_color_1;
+        border: 2px solid $button_border;
+    }
+
+    &__bbtn {
+        background-color: $button_background_1;
+        color: $text_color_3;
+    }
 }
