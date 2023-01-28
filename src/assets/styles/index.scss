@@ -25,9 +25,10 @@ html {
 
 a {
   text-decoration: none;
+  color: $link_color;
 
   &:hover {
-    text-decoration: underline;
+   color: $hover_link_color;
   }
 }
 

@@ -1,6 +1,31 @@
 @import "../../assets/styles/index.scss";
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    & > div {
+        display: flex; 
+        align-items: center;
+    }
+    &__wrap{ 
+        width: 100%;
+        border-bottom: 1px solid $border_color;
+    }
+    
+    img {
+        width: 126px;
+        height: 32px;
+        object-fit: fill;
+    }
+    &__sep{
+        width: 2px;
+        height: 40px;
+        background: $background_color;
+        border-radius: 2px;
+        margin-left: 32px;
+    }
     button {
         padding: 12px 16px;
         border-radius: 90px;
@@ -19,4 +44,9 @@
         background-color: $button_background_1;
         color: $text_color_3;
     }
+    a {
+        margin-left: 32px;
+
+    }
+
 }
