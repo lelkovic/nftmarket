@@ -17,7 +17,10 @@ export const Header = () => {
                         </nav>
                     </div>
                     <div>
-                        <input type="text" placeholder="Search" />
+                        <div className={styles.header__inputWrap}>
+                            <input type="text" placeholder="Search" />
+                        </div>
+                        <i className="icon-Notify" />
                         <button className={styles.header__bbtn}>Upload</button>
                         <button className={styles.header__wbtn}>Connect Wallet</button>
                     </div>

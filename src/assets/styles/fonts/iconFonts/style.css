@@ -25,6 +25,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:global {
+
 .icon-Shape:before {
   content: "\e900";
   color: #777e91;
@@ -32,4 +34,6 @@
 .icon-Notify:before {
   content: "\e901";
   color: #777e91;
+}
+
 }
