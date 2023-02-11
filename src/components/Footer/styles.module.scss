@@ -1,0 +1,41 @@
+@import "../../assets/styles/index.scss";
+
+.footer {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        border-top: 1px solid $border_color;
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0;
+    }
+
+    &__copy {
+        color: $text_color_2;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    &__cookies {
+        color: $text_color_1;
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0;
+
+        span {
+            color: $text_color_4;
+            font-size: 12px;
+            line-height: 20px;
+            margin-left: 15px;
+        }
+    }
+}
