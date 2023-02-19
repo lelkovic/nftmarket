@@ -13,7 +13,9 @@ export const Footer = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li>Crypter.</li>
+                        <li>
+                            <span>Crypter</span>
+                        </li>
                         <li>
                             <a href="#">Discover</a>
                         </li>
@@ -25,7 +27,9 @@ export const Footer = () => {
                         </li>
                     </ul>
                     <ul>
-                        <li>Info</li>
+                        <li>
+                            <span>Info</span>
+                        </li>
                         <li>
                             <a href="#">Download</a>
                         </li>
@@ -37,11 +41,17 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    <p>Join Newsletter</p>
-                    <p>Subscribe our newsletter to get more free design course and resource</p>
-                    <input type="text" placeholder="Enter your email" />
-                    <button>{"->"}</button>
+                <div className={styles.footer__subscribe}>
+                    <p className={styles.footer__subscribeTitle}>Join Newsletter</p>
+                    <p className={styles.footer__subscribeText}>
+                        Subscribe our newsletter to get more free design course and resource
+                    </p>
+                    <div className={styles.footer__form}>
+                        <input type="text" placeholder="Enter your email" />
+                        <button>
+                            <i className="vector-Stroke" />
+                        </button>
+                    </div>
                 </div>
             </div>
             <div className={styles.footer__bottom}>
