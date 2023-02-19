@@ -1,76 +1,39 @@
 @import "../../assets/styles/index.scss";
 
-.header {
+.titleBlock {
+    padding: 128px 0px 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    & > div {
-        display: flex; 
-        align-items: center;
+    flex-direction: column;
+
+    &__subtitle {
+        text-transform: uppercase;
+        color: $text_color_2;
+        font-size: 12px;
+
     }
-    &__wrap{ 
-        width: 100%;
-        border-bottom: 1px solid $border_color;
+
+    &__title {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: $text_color_1;
+        margin: 8px 0 24px;
+
     }
-    
-    img {
-        width: 126px;
-        height: 32px;
-        object-fit: fill;
-    }
-    &__sep{
-        width: 2px;
-        height: 40px;
-        background: $background_color;
-        border-radius: 2px;
-        margin-left: 32px;
-    }
-    button {
+    &__button {
         padding: 12px 16px;
         border-radius: 90px;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
-    }
-
-    &__wbtn {
         background-color: transparent;
         color: $text_color_1;
         border: 2px solid $button_border;
         margin-left: 12px;
     }
-
-    &__bbtn {
-        background-color: $button_background_1;
-        color: $text_color_3;
-        margin-left: 35px;
-    }
-    a {
-        margin-left: 32px;
-
-    }
-
-    input {
-        padding: 10px 16px;
-        width: 256px;
-        height: 40px;
-        border: 2px solid $border_color;
-        border-radius: 8px;
-    }
-
-    &__inputWrap{
-        position: relative;
-        margin-right: 35px;
-
-        &::after {
-            position: absolute;
-            right: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-family: "icomoon";
-            content: "\e900";
-            color: $text_color_2;
-        }
-    }
+    
 }
+
