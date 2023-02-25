@@ -49,7 +49,7 @@ export const Footer = () => {
                     <div className={styles.footer__form}>
                         <input type="text" placeholder="Enter your email" />
                         <button>
-                            <i className="vector-Stroke" />
+                            <i className="icon-vector-Stroke" />
                         </button>
                     </div>
                 </div>

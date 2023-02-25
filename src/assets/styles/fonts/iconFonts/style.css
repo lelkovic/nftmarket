@@ -25,15 +25,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-vector-Stroke:before {
-  content: "\e902";
-  color: #fcfcfd;
-}
-.icon-Shape:before {
-  content: "\e900";
-  color: #777e91;
-}
-.icon-Notify:before {
-  content: "\e901";
-  color: #777e91;
+:global {
+  .icon-vector-Stroke:before {
+    content: "\e902";
+    color: #fcfcfd;
+  }
+  .icon-Shape:before {
+    content: "\e900";
+    color: #777e91;
+  }
+  .icon-Notify:before {
+    content: "\e901";
+    color: #777e91;
+  }
 }
