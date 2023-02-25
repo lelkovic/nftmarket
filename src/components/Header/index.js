@@ -8,15 +8,19 @@ export const Header = () => {
         <div className={styles.header__wrap}>
             <Container>
                 <header className={styles.header}>
-                    <div>
+                    <div className={styles.header__left}>
                         <img src={Logo} alt="logo" />
                         <div className={styles.header__sep}></div>
                         <nav>
                             <a href="#Discover">Discover</a>
                             <a href="#How-it-work">How it work</a>
                         </nav>
+                        <button onClick={() => null}>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
-                    <div>
+                    <div className={styles.header__right}>
                         <div className={styles.header__inputWrap}>
                             <input type="text" placeholder="Search" />
                         </div>
