@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 
     &__subtitle {
         text-transform: uppercase;
@@ -17,12 +18,17 @@
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 40px;
         color: $text_color_1;
         margin: 8px 0 24px;
 
+        @media (min-width: $tablet) {
+            font-size: 40px;
+            line-height: 48px;
+        }
     }
+
     &__button {
         padding: 12px 16px;
         border-radius: 90px;

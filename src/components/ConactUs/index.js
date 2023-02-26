@@ -12,7 +12,7 @@ export const ContactUs = () => {
                         <p className={styles.contactUs__pretitle}>Save your time with Stacks</p>
                         <h2> Earn free crypto with Crypter</h2>
                         <p className={styles.contactUs__description}>A creative agency that lead and inspire</p>
-                        <div>
+                        <div className={styles.contactUs__buttons}>
                             <a className={styles.contactUs__buttonLeft} href="#">
                                 Earn now
                             </a>
@@ -21,7 +21,7 @@ export const ContactUs = () => {
                             </a>
                         </div>
                     </div>
-                    <div>
+                    <div className={styles.contactUs__img}>
                         <img src={contactUs} alt="ContactUs img" />
                     </div>
                 </div>

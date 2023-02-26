@@ -2,9 +2,14 @@
 
 .footer {
     &__top {
+        flex-direction: column;
         display: flex;
         justify-content: space-between;
         padding: 82px 0;
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+         }
 
         h3 {
             margin: 32px 0 0 0;
@@ -16,8 +21,13 @@
     }
 
     nav {
+        flex-direction: column;
         display: flex;
         justify-content: space-between;
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+         }
 
         ul {
             list-style: none;

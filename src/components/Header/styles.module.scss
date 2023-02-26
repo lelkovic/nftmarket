@@ -30,7 +30,7 @@
         border-radius: 2px;
         margin-left: 32px;
 
-        @media (min-width: $tablet) {
+        @media (min-width: $desktop) {
             display: block;
         }
     }
@@ -38,7 +38,7 @@
     nav {
         display: none;
 
-        @media (min-width: $tablet) {
+        @media (min-width: $desktop) {
             display: block;
         }
     }
@@ -49,6 +49,8 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
+        width: max-content;
+        
     }
 
     &__wbtn {
@@ -95,7 +97,7 @@
         display: none;
 
         @media (min-width: $tablet) {
-           display: block;
+           display: flex;
         }
     }
     
@@ -103,10 +105,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        
+
+        @media (min-width: $desktop) {
+            justify-content: start;
+         }
         button {
             background: transparent;
             border: none;
+
+            @media (min-width: $tablet) {
+                display: none;
+             }
             
             span {
                 background: $text_color_2;
