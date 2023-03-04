@@ -14,9 +14,17 @@
         h3 {
             margin: 32px 0 0 0;
             border-radius: 90px;
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 16px;
+            line-height: 24px;
             font-weight: 400;
+            margin-bottom: 32px;
+            max-width: 200px;
+
+            @media (min-width: $desktop) {
+                font-size: 24px;
+                line-height: 32px;
+                max-width: 260px;
+            }
         }
     }
 
@@ -27,16 +35,48 @@
 
         @media (min-width: $tablet) {
             flex-direction: row;
+            min-width: 260px;
          }
 
         ul {
             list-style: none;
+            padding: 38px 0 32px;
+            border-top: 1px solid $border_color;
+            margin: 0;
+
+            @media (min-width: $tablet) {
+                border: none;
+             }
+
+            &:last-of-type {
+                border-bottom: 1px solid $border_color;
+
+                @media (min-width: $tablet) {
+                    border: none;
+                }
+            }
         }
         
         span {
+            position: relative;
             display: block;
             margin-bottom: 40px;
             font-weight: 500;
+            width: 100%;
+
+            &::after {
+                position: absolute;
+                right: 0;
+                content: "\e903";
+                font-family: "icomoon";
+                color: $text_color_2;
+                font-size: 8px;
+
+                @media (min-width: $tablet) {
+                    display: none;
+                }
+            }
+
         }
 
         a {
@@ -50,7 +90,15 @@
     }
 
     &__subscribe {
-        width: 352px;
+        margin-top: 16px;
+
+        @media (min-width: $tablet) {
+            width: 304px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 352px;
+        }    
     }
 
     &__subscribeTitle {
@@ -111,6 +159,11 @@
         font-size: 12px;
         line-height: 20px;
         margin: 0;
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: inline;
+         }
 
         span {
             color: $text_color_4;

@@ -9,7 +9,7 @@
 
     @media (min-width: $tablet) {
         flex-direction: row;
-        text-align-last: left;
+        text-align: left;
      }
 
     &__wrap {
@@ -93,6 +93,10 @@
 
     &__img {
         max-width: 311px;
+        
+        @media (min-width: $tablet) {
+            max-width: none;
+        }
 
         img {
             width: 100%;
