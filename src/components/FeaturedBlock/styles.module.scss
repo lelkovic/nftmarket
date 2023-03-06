@@ -1,0 +1,26 @@
+@import "../../assets/styles/index.scss";
+
+.featuredBlock {
+    padding: 128px 0px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        color: $text_color_1;
+        margin: 8px 0 24px;
+
+        @media (min-width: $tablet) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    
+}
+
