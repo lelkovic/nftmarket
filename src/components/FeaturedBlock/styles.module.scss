@@ -3,9 +3,7 @@
 .featuredBlock {
     padding: 128px 0px 50px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-between;
 
     &__title {
         font-family: 'DM Sans';
@@ -21,18 +19,20 @@
             line-height: 48px;
         }
     }
-    
-    .img {
-        position: absolute;
-        display: flex;
-    }
 
-    &__title {
-         justify-content: space-between;
-         width: 352px;
-         height: 128px;
-        color: $text_color_1;
-        font-size: 64px;
+    &__left{
+        width: 640px;
+        img {
+            border-radius: 16px;
+        }
+    } 
+
+    &__right{ 
+        width: 352px;
+    }
+    &__subInfo{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
