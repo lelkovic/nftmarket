@@ -6,6 +6,10 @@ import avatar from "../../assets/images/avatar.png";
 import user from "../../assets/images/user.png";
 
 export const FeaturedBlock = () => {
+    // let url = "https://api.coingecko.com/api/v3/coins/ethereum";
+    // let response = await fetch(url);
+
+    // let commits = await response.json();
     return (
         <Container>
             <div className={styles.featuredBlock}>
@@ -15,8 +19,8 @@ export const FeaturedBlock = () => {
                 <div className={styles.featuredBlock__right}>
                     <h2 className={styles.featuredBlock__title}>Marco carrillo®</h2>
 
-                    <div classname={styles.featuredBlock__subInfo}>
-                        <div className={styles.featuredBlock__creator}>
+                    <div className={styles.featuredBlock__subInfo}>
+                        <div>
                             <img src={avatar} alt="Avatar" />
                             <div>
                                 <p className={styles.featuredBlock__subInfoTitle}>Creator</p>
@@ -24,7 +28,7 @@ export const FeaturedBlock = () => {
                             </div>
                         </div>
 
-                        <div className={styles.featuredBlock__instantPrice}>
+                        <div>
                             <img src={user} alt="userloading"></img>
                             <div>
                                 <p className={styles.featuredBlock__subInfoTitle}>Instant Price</p>
@@ -33,8 +37,18 @@ export const FeaturedBlock = () => {
                         </div>
                     </div>
 
-                    <a className={styles.featuredBlock__buttontop}>Place a bid</a>
-                    <a className={styles.featuredBlock__buttonbot}>View item</a>
+                    <div className={styles.featuredBlock__info}>
+                        <p className={styles.featuredBlock__bidTitle}>Current Bid</p>
+                        <p className={styles.featuredBlock__bidPrice}>1.00 ETH</p>
+                        {/* <p className={styles.featuredBlock__usdPrice}>${commits.market_data.current_price.usd}</p> */}
+                    </div>
+
+                    <a href="#" className={styles.featuredBlock__buttontop}>
+                        Place a bid
+                    </a>
+                    <a href="#" className={styles.featuredBlock__buttonbot}>
+                        View item
+                    </a>
                 </div>
             </div>
         </Container>

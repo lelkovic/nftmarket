@@ -33,6 +33,24 @@
     &__subInfo{
         display: flex;
         justify-content: space-between;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 48px;
+        }
+    }
+
+    &__subInfo > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        text-align: center;
+        border-radius: 24px;
+        border: 2px solid $border_color;
+        padding: 32px;
     }
 }
 
