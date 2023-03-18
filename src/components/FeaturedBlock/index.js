@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from "../Container";
 import featuredBlock from "../../assets/images/featuredBlock.png";
-import styles from "./styles.module.scss";
 import avatar from "../../assets/images/avatar.png";
 import user from "../../assets/images/user.png";
+import { fetchData } from "../../helpers/index";
+import styles from "./styles.module.scss";
 
 export const FeaturedBlock = () => {
-    // let url = "https://api.coingecko.com/api/v3/coins/ethereum";
-    // let response = await fetch(url);
+    const [data, setData] = useState(null);
 
-    // let commits = await response.json();
+    useEffect(() => {
+        const getData = async () => {
+            const url = "https://api.coingecko.com/api/v3/coins/ethereum";
+            const result = await fetchData(url);
+            setData(result);
+        };
+
+        getData();
+    }, []);
     return (
         <Container>
             <div className={styles.featuredBlock}>
@@ -40,7 +48,9 @@ export const FeaturedBlock = () => {
                     <div className={styles.featuredBlock__info}>
                         <p className={styles.featuredBlock__bidTitle}>Current Bid</p>
                         <p className={styles.featuredBlock__bidPrice}>1.00 ETH</p>
-                        {/* <p className={styles.featuredBlock__usdPrice}>${commits.market_data.current_price.usd}</p> */}
+                        <p className={styles.featuredBlock__usdPrice}>
+                            {data ? "$" + data.market_data.current_price.usd : "Loading.."}
+                        </p>
                     </div>
 
                     <a href="#" className={styles.featuredBlock__buttontop}>
