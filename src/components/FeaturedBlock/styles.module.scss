@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
 
+
     &__title {
         font-family: 'DM Sans';
         font-style: normal;
@@ -53,16 +54,84 @@
         border-radius: 24px;
         border: 2px solid $border_color;
         padding: 32px;
+        margin-bottom: 52px;
 
-        &__bidInfo {
-            font-size: 48px;
-            line-height: 56;
-            font-family: 'DM Sans' sans-serif;
-        }
+    }
 
-        &__bidTitle {
-            font-size: 16px;
-        }
+    &__bidPrice {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    &__bidTitle {
+        font-size: 16px;
+    }
+
+    &__usdPrice {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $text_color_2;
+    }
+
+    a {
+        display: flex;
+        text-align: column;
+        justify-content: center;
+        height: 48px;
+        width: max-content;
+    }
+
+    &__buttontop {
+        padding: 16px 133.5px;
+        border-radius: 90px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        background-color: $text_color_4;
+        color: $text_color_3;
+        border: 2px;
+        margin-left: 12px;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &__buttonbot {
+        background-color: transparent;
+        color: $text_color_1;
+        border: 2px solid $button_border;
+        margin-left: 12px;
+        border-radius: 90px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 12px;
+        padding: 16px 133.5px;
+    }
+
+    &__subInfoTitle {
+        color: $text_color_2;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+
+    &__avataruser {
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    &__avatar {
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    &__subInfoText {
+        padding-bottom: 15px;
     }
 
 

@@ -29,15 +29,14 @@ export const FeaturedBlock = () => {
 
                     <div className={styles.featuredBlock__subInfo}>
                         <div>
-                            <img src={avatar} alt="Avatar" />
+                            <img className={styles.featuredBlock__avatar} src={avatar} alt="Avatar" />
                             <div>
                                 <p className={styles.featuredBlock__subInfoTitle}>Creator</p>
                                 <p className={styles.featuredBlock__subInfoText}>Enrico Cole</p>
                             </div>
                         </div>
-
                         <div>
-                            <img src={user} alt="userloading"></img>
+                            <img className={styles.featuredBlock__avataruser} src={user} alt="userloading"></img>
                             <div>
                                 <p className={styles.featuredBlock__subInfoTitle}>Instant Price</p>
                                 <p className={styles.featuredBlock__subInfoText}>3.5 ETH</p>
@@ -51,6 +50,7 @@ export const FeaturedBlock = () => {
                         <p className={styles.featuredBlock__usdPrice}>
                             {data ? "$" + data.market_data.current_price.usd : "Loading.."}
                         </p>
+                        <p className={styles.featuredBlock__countdown}>Auction ending in</p>
                     </div>
 
                     <a href="#" className={styles.featuredBlock__buttontop}>
