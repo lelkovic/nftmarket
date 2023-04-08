@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "../Container";
+import { MyTimer } from "../UI/Timer";
 import featuredBlock from "../../assets/images/featuredBlock.png";
 import avatar from "../../assets/images/avatar.png";
 import user from "../../assets/images/user.png";
@@ -51,6 +52,7 @@ export const FeaturedBlock = () => {
                             {data ? "$" + data.market_data.current_price.usd : "Loading.."}
                         </p>
                         <p className={styles.featuredBlock__countdown}>Auction ending in</p>
+                        <MyTimer />
                     </div>
 
                     <a href="#" className={styles.featuredBlock__buttontop}>

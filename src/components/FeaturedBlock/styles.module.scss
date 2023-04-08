@@ -85,10 +85,14 @@
         font-weight: 700;
         font-size: 48px;
         line-height: 56px;
+        margin: 0;
     }
 
     &__bidTitle {
         font-size: 16px;
+        font-weight: 500;
+        color: $text_color_1;
+        margin: 5px 0;
     }
 
     &__usdPrice {
@@ -97,6 +101,7 @@
         font-size: 24px;
         line-height: 32px;
         color: $text_color_2;
+        margin: 5px 0 24px;
     }
 
     a {
@@ -151,6 +156,12 @@
     &__subInfoText {
         padding-bottom: 15px;
     }
+
+    &__countdown {
+        font-weight: 500;
+        color: $text_color_1;
+    }
+
 
 
 }

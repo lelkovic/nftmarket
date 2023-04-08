@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../Container";
-import Logo from "../../assets/images/logo.png";
 import styles from "./styles.module.scss";
 
 export const TitleBlock = () => {
