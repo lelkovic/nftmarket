@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../Container";
 import Logo from "../../assets/images/logo.png";
 import styles from "./styles.module.scss";
 
 export const Header = () => {
+    const [isMobileMenu, setisMobileMenu] = useState(false);
     return (
         <div className={styles.header__wrap}>
             <Container>
@@ -15,7 +16,10 @@ export const Header = () => {
                             <a href="#Discover">Discover</a>
                             <a href="#How-it-work">How it work</a>
                         </nav>
-                        <button onClick={() => null}>
+                        <button
+                            className={`${styles.header__burger} ${isMobileMenu && styles.header__burgerOpen}`}
+                            onClick={() => setisMobileMenu(!isMobileMenu)}
+                        >
                             <span></span>
                             <span></span>
                         </button>
@@ -30,6 +34,7 @@ export const Header = () => {
                     </div>
                 </header>
             </Container>
+            {isMobileMenu && <div className={styles.mobileMenu}></div>}
         </div>
     );
 };

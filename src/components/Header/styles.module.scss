@@ -126,23 +126,47 @@
         @media (min-width: $desktop) {
             justify-content: start;
         }
+    }
 
-        button {
-            background: transparent;
-            border: none;
+    &__burger {
+        background: transparent;
+        border: none;
+        height: 39px;
 
-            @media (min-width: $tablet) {
-                display: none;
-            }
+        @media (min-width: $tablet) {
+            display: none;
+        }
 
-            span {
-                background: $text_color_2;
-                height: 3px;
-                width: 21px;
-                border-radius: 3px;
-                display: block;
-                margin: 3px;
-            }
+        span {
+            background: $text_color_2;
+            height: 3px;
+            width: 21px;
+            border-radius: 3px;
+            display: block;
+            margin: 3px;
         }
     }
+
+    &__burgerOpen {
+        position: relative;
+
+        span {
+            position: absolute;
+            transform: rotate(45deg);
+            right: 2px;
+            top: 15px;
+        }
+
+        span:nth-child(1) {
+            transform: rotate(135deg);
+        }
+    }
+}
+
+
+.mobileMenu {
+    background-color: $background_color_2;
+    width: 100%;
+    height: 100vh;
+
 }
