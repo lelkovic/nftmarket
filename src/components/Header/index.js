@@ -34,7 +34,20 @@ export const Header = () => {
                     </div>
                 </header>
             </Container>
-            {isMobileMenu && <div className={styles.mobileMenu}></div>}
+            {isMobileMenu && (
+                <div className={styles.mobileMenu}>
+                    <nav>
+                        <a href="#Discover">Discover</a>
+                        <a href="#How-it-work">How it work</a>
+                    </nav>
+                    <div className={styles.mobileMenu__bottom}>
+                        <button className={styles.mobileMenu__walletButton}>Connect Wallet</button>
+                        <button className={styles.mobileMenu__search}>
+                            <i className="icon-Shape" />
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
