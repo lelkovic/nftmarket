@@ -19,6 +19,7 @@ export const FeaturedBlock = () => {
 
         getData();
     }, []);
+
     return (
         <Container>
             <div className={styles.featuredBlock}>
