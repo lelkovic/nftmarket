@@ -161,4 +161,21 @@
         font-weight: 500;
         color: $text_color_1;
     }
+
+    &__arrowNext {
+        bottom: 50px !important;
+        right: 250px !important;
+        top: auto;
+        z-index: 100;
+
+    }
+
+    &__arrowPrev {
+        bottom: 50px !important;
+        right: 300px !important;
+        top: auto;
+        left: auto;
+        z-index: 100;
+
+    }
 }
