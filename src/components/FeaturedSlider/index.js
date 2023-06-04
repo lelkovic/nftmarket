@@ -28,6 +28,7 @@ function SamplePrevArrow(props) {
 
 export const FeaturedSlider = () => {
     const [data, setData] = useState(null);
+    const [sliderData, setSliderData] = useState(null);
     const settings = {
         dots: false,
         infinite: false,
@@ -42,10 +43,15 @@ export const FeaturedSlider = () => {
             const url = "https://api.coingecko.com/api/v3/coins/ethereum";
             const result = await fetchData(url);
             setData(result);
+
+            const urlSlider = "https://market-back.herokuapp.com/featuredSlider";
+            const resultSlider = await fetchData(urlSlider);
+            setSliderData(resultSlider);
         };
 
         getData();
     }, []);
+    console.log(sliderData);
 
     return (
         <Container>
