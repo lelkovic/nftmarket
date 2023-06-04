@@ -9,26 +9,18 @@ import { fetchData } from "../../helpers/index";
 import styles from "./styles.module.scss";
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-        <div
-            className={`${styles.featuredSlider__arrowNext} ${className}`}
-            style={{ ...style, display: "block", background: "green" }}
-            onClick={onClick}
-        >
+        <div className={`${styles.featuredSlider__arrowNext} ${className}`} onClick={onClick}>
             <i className="icon-vector-Stroke" />
         </div>
     );
 }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-        <div
-            className={`${styles.featuredSlider__arrowPrev} ${className}`}
-            style={{ ...style, display: "block", background: "red" }}
-            onClick={onClick}
-        >
+        <div className={`${styles.featuredSlider__arrowPrev} ${className}`} onClick={onClick}>
             <i className="icon-vector-Stroke" />
         </div>
     );

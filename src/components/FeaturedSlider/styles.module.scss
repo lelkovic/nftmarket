@@ -162,20 +162,55 @@
         color: $text_color_1;
     }
 
-    &__arrowNext {
-        bottom: 50px !important;
-        right: 250px !important;
-        top: auto;
+    &__arrowNext,
+    &__arrowPrev {
+        bottom: 90px !important;
+        top: auto !important;
+        left: auto !important;
         z-index: 100;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #E6E8EC !important;
+        border-radius: 40px;
+        width: 40px !important;
+        height: 40px !important;
+
+
+        &::before {
+            content: none !important;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+
+        i {
+            font-size: 10px;
+
+            &::before {
+                color: #777E91;
+            }
+        }
+    }
+
+    &__arrowNext {
+        right: 210px !important;
 
     }
 
     &__arrowPrev {
-        bottom: 50px !important;
-        right: 300px !important;
-        top: auto;
-        left: auto;
-        z-index: 100;
+        right: 260px !important;
+        transform: rotate(180deg) translate(0, 50%) !important;
+    }
+}
 
+:global {
+    .slick-disabled {
+        border: none !important;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
