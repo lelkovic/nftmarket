@@ -9,7 +9,7 @@
 
         @media (min-width: $tablet) {
             flex-direction: row;
-         }
+        }
 
         h3 {
             margin: 32px 0 0 0;
@@ -36,7 +36,7 @@
         @media (min-width: $tablet) {
             flex-direction: row;
             min-width: 260px;
-         }
+        }
 
         ul {
             list-style: none;
@@ -46,7 +46,7 @@
 
             @media (min-width: $tablet) {
                 border: none;
-             }
+            }
 
             &:last-of-type {
                 border-bottom: 1px solid $border_color;
@@ -55,8 +55,22 @@
                     border: none;
                 }
             }
+
+            a {
+                display: none;
+            }
         }
-        
+
+        ul.footer__menuOpened {
+            a {
+                display: block;
+            }
+
+            span::after {
+                transform: rotate(180deg);
+            }
+        }
+
         span {
             position: relative;
             display: block;
@@ -71,6 +85,7 @@
                 font-family: "icomoon";
                 color: $text_color_2;
                 font-size: 8px;
+                transition: all .3s ease;
 
                 @media (min-width: $tablet) {
                     display: none;
@@ -85,7 +100,7 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 16px;
-            font-family: "DM Sans", sans-serif; 
+            font-family: "DM Sans", sans-serif;
         }
     }
 
@@ -98,7 +113,7 @@
 
         @media (min-width: $desktop) {
             width: 352px;
-        }    
+        }
     }
 
     &__subscribeTitle {
@@ -113,7 +128,7 @@
         font-size: 14px;
         line-height: 24px;
     }
-    
+
     &__form {
         position: relative;
 
@@ -125,7 +140,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
-            width: 100% ;
+            width: 100%;
         }
 
         button {
@@ -163,7 +178,7 @@
 
         @media (min-width: $tablet) {
             display: inline;
-         }
+        }
 
         span {
             color: $text_color_4;

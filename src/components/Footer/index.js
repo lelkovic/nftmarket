@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../Container";
 import Logo from "../../assets/images/logo.png";
 import styles from "./styles.module.scss";
 
 export const Footer = () => {
+    const [crypterOpened, setCrypterOpened] = useState(false);
+    const [infoOpened, setInfoOpened] = useState(false);
+
     return (
         <Container className={styles.footer}>
             <div className={styles.footer__top}>
@@ -12,8 +15,8 @@ export const Footer = () => {
                     <h3>The New Creative Economy.</h3>
                 </div>
                 <nav>
-                    <ul>
-                        <li>
+                    <ul className={crypterOpened && styles.footer__menuOpened}>
+                        <li onClick={() => setCrypterOpened(!crypterOpened)}>
                             <span>Crypter</span>
                         </li>
                         <li>
@@ -26,8 +29,8 @@ export const Footer = () => {
                             <a href="#">Create item</a>
                         </li>
                     </ul>
-                    <ul>
-                        <li>
+                    <ul className={infoOpened && styles.footer__menuOpened}>
+                        <li onClick={() => setInfoOpened(!infoOpened)}>
                             <span>Info</span>
                         </li>
                         <li>
