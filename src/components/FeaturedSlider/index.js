@@ -101,7 +101,6 @@ export const FeaturedSlider = () => {
 
         getData();
     }, []);
-    console.log(sliderData);
 
     return (
         <Container>
