@@ -55,7 +55,8 @@
         }
     }
 
-    button {
+    button,
+    &__wbtn {
         padding: 12px 2px;
         border-radius: 90px;
         font-weight: 700;

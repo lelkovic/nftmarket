@@ -23,7 +23,7 @@ export const Footer = () => {
                             <a href="#">Discover</a>
                         </li>
                         <li>
-                            <a href="#">Connect wallet</a>
+                            <a href="/connectWallet">Connect wallet</a>
                         </li>
                         <li>
                             <a href="#">Create item</a>

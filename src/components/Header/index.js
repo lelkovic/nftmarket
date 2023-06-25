@@ -10,7 +10,9 @@ export const Header = () => {
             <Container>
                 <header className={styles.header}>
                     <div className={styles.header__left}>
-                        <img src={Logo} alt="logo" />
+                        <a href="/">
+                            <img src={Logo} alt="logo" />
+                        </a>
                         <div className={styles.header__sep}></div>
                         <nav>
                             <a href="#Discover">Discover</a>
@@ -30,7 +32,9 @@ export const Header = () => {
                         </div>
                         <i className="icon-Notify" />
                         <button className={styles.header__bbtn}>Upload</button>
-                        <button className={styles.header__wbtn}>Connect Wallet</button>
+                        <a href="/connectWallet" className={styles.header__wbtn}>
+                            Connect Wallet
+                        </a>
                     </div>
                 </header>
             </Container>
