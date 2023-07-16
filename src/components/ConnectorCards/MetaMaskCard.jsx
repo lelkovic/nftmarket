@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react'
 
-import { hooks, metaMask } from '../connectors/metaMask'
+import { hooks, metaMask } from '../Connectors/metaMask'
 import { Card } from '../Card'
 
 const { useChainId, useAccounts, useIsActivating, useIsActive, useProvider, useENSNames } = hooks
