@@ -10,7 +10,7 @@ export const [walletConnectV2, hooks] = initializeConnector(
         new WalletConnectV2({
             actions,
             options: {
-                // todo: need move projectid to env
+                // todo: need move projectId to env
                 projectId: "31b76537a58759fc36e75d09b27af0b5",
                 chains: [mainnet],
                 optionalChains,

@@ -3,7 +3,7 @@ import { useWeb3React, Web3ReactProvider } from '@web3-react/core'
 
 import { coinbaseWallet, hooks as coinbaseWalletHooks } from './Connectors/coinbaseWallet'
 import { hooks as metaMaskHooks, metaMask } from './Connectors/metaMask'
-import { hooks as walletConnectV2Hooks, walletConnectV2 } from './Connectors/walletConnectV2'
+import { hooks as walletConnectV2Hooks, walletConnectV2 } from './Connectors/walletConnects2'
 import { getName } from '../utils'
 
 const connectors = [

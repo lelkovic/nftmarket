@@ -36,9 +36,9 @@ const ETH = {
   }
   
   const getInfuraUrlFor = (network) =>
-    process.env.infuraKey ? https://${network}.infura.io/v3/${process.env.infuraKey} : undefined
+    process.env.infuraKey ? `https://${network}.infura.io/v3/${process.env.infuraKey}` : undefined
   const getAlchemyUrlFor = (network) =>
-    process.env.alchemyKey ? https://${network}.alchemyapi.io/v2/${process.env.alchemyKey} : undefined
+    process.env.alchemyKey ? `https://${network}.alchemyapi.io/v2/${process.env.alchemyKey}` : undefined
   
   
   export const MAINNET_CHAINS = {
