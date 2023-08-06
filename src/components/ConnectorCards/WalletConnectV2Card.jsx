@@ -3,7 +3,7 @@ import { URI_AVAILABLE } from '@web3-react/walletconnect-v2'
 import { useEffect, useState } from 'react'
 
 import { MAINNET_CHAINS } from '../../chains'
-import { hooks, walletConnectV2 } from '../Connectors/walletConnectV2'
+import { hooks, walletConnectV2 } from '../Connectors/walletConnects2'
 import { Card } from '../Card'
 
 const CHAIN_IDS = Object.keys(MAINNET_CHAINS).map(Number)
