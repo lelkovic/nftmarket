@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react'
 
-import { coinbaseWallet, hooks } from '../connectors/coinbaseWallet'
+import { coinbaseWallet, hooks } from '../Connectors/coinbaseWallet'
 import { Card } from '../Card'
 
 const { useChainId, useAccounts, useIsActivating, useIsActive, useProvider, useENSNames } = hooks
