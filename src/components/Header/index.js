@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import Container from "../Container";
 import Logo from "../../assets/images/logo.png";
+import { hooks, metaMask } from '../Connectors/metaMask'
 import styles from "./styles.module.scss";
 
 export const Header = () => {
-    const [isMobileMenu, setisMobileMenu] = useState(false);
+    const [isMobileMenu, setIsMobileMenu] = useState(false);
+
+    const { useAccounts } = hooks;
+    const accounts = useAccounts();
+
     return (
         <div className={styles.header__wrap}>
             <Container>
@@ -20,7 +25,7 @@ export const Header = () => {
                         </nav>
                         <button
                             className={`${styles.header__burger} ${isMobileMenu && styles.header__burgerOpen}`}
-                            onClick={() => setisMobileMenu(!isMobileMenu)}
+                            onClick={() => setIsMobileMenu(!isMobileMenu)}
                         >
                             <span></span>
                             <span></span>
@@ -32,9 +37,21 @@ export const Header = () => {
                         </div>
                         <i className="icon-Notify" />
                         <button className={styles.header__bbtn}>Upload</button>
-                        <a href="/connectWallet" className={styles.header__wbtn}>
-                            Connect Wallet
-                        </a>
+                        {accounts ?
+                            <button className={styles.header__wbtn} onClick={() => {
+                                if (metaMask?.deactivate) {
+                                    void metaMask.deactivate()
+                                } else {
+                                    void metaMask.resetState()
+                                }
+                            }}>
+                                Disconnect
+                            </button>
+                            :
+                            <a href="/connectWallet" className={styles.header__wbtn}>
+                                Connect Wallet
+                            </a>
+                        }
                     </div>
                 </header>
             </Container>

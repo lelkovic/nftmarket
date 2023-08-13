@@ -65,7 +65,7 @@ useEffect(() => {
           setError(undefined)
           return
         }
-if (desiredChainId === -1) {
+        if (desiredChainId === -1) {
           await connector.activate()
         } else if (
           connector instanceof WalletConnectV2
