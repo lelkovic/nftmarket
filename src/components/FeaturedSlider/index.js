@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Container from "../Container";
 import { MyTimer } from "../UI/Timer";
-import featuredBlock from "../../assets/images/featuredBlock.png";
 import avatar from "../../assets/images/avatar.png";
 import user from "../../assets/images/user.png";
+import sliderDataJson from "./sliderData.json";
 import { fetchData } from "../../helpers/index";
 import styles from "./styles.module.scss";
 
@@ -94,8 +94,9 @@ export const FeaturedSlider = () => {
             const result = await fetchData(url);
             setData(result);
 
-            const urlSlider = "https://market-back.herokuapp.com/featuredSlider";
-            const resultSlider = await fetchData(urlSlider);
+            // const urlSlider = "https://market-back.herokuapp.com/featuredSlider";
+            // const resultSlider = await fetchData(urlSlider);
+            const resultSlider = sliderDataJson.slides;
             setSliderData(resultSlider);
         };
 

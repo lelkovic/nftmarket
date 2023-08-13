@@ -1,0 +1,25 @@
+{
+    "slides": [
+      {
+        "title": "Slide 1",
+        "image": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg",
+        "creator": "Jack Owen",
+        "instantPrice": "10",
+        "currentBid": "0.5"
+      },
+      {
+        "title": "Slide 2",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?w=2000",
+        "creator": "Martin Crosby",
+        "instantPrice": "3",
+        "currentBid": "1"
+      },
+      {
+        "title": "Slide 3",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8mYsmAFJTfsvX0WL3975pHubevjD8UrQJsw&usqp=CAU",
+        "creator": "Myla Schaefer",
+        "instantPrice": "1",
+        "currentBid": "0.25"
+      }
+    ]
+  }
