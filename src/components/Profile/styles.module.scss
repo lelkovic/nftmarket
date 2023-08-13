@@ -1,0 +1,27 @@
+@import "../../assets/styles/index.scss";
+
+.profile {
+    display: flex;
+    align-items: center;
+    border: 2px solid $border_color;
+    border-radius: 90px;
+    padding: 2px 10px 2px 2px;
+
+    &__img {
+        width: 32px;
+        height: 32px;
+        border-radius: 48px;
+        margin-right: 12px;
+        background: $eth_color;
+    }
+
+    &__balance {
+        margin-right: 4px;
+        margin: 0 4px 0 0;
+    }
+
+    &__eth {
+        color: $eth_color;
+        margin: 0;
+    }
+}

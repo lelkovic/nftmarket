@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Container from "../Container";
 import Logo from "../../assets/images/logo.png";
-import { hooksMetaMask } from '../../web3-lib/connectors'
-import { handleDisconnect } from '../../helpers/web3'
+import { hooksMetaMask } from "../../web3-lib/connectors";
 import styles from "./styles.module.scss";
+import Profile from "../Profile/index.js";
 
 export const Header = () => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
@@ -17,7 +17,7 @@ export const Header = () => {
                 <header className={styles.header}>
                     <div className={styles.header__left}>
                         <a href="/">
-                            <img src={Logo} alt="logo" />
+                            <img className={styles.header__logo} src={Logo} alt="logo" />
                         </a>
                         <div className={styles.header__sep}></div>
                         <nav>
@@ -38,15 +38,13 @@ export const Header = () => {
                         </div>
                         <i className="icon-Notify" />
                         <button className={styles.header__bbtn}>Upload</button>
-                        {accounts ?
-                            <button className={styles.header__wbtn} onClick={handleDisconnect}>
-                                Disconnect
-                            </button>
-                            :
+                        {accounts ? (
+                            <Profile />
+                        ) : (
                             <a href="/connectWallet" className={styles.header__wbtn}>
                                 Connect Wallet
                             </a>
-                        }
+                        )}
                     </div>
                 </header>
             </Container>
