@@ -3,9 +3,9 @@ import Container from "../Container";
 import styles from "./styles.module.scss";
 import connectPreview from "../../assets/images/connectPreview.png";
 
-import { metaMask } from '../Connectors/metaMask'
-// import { walletConnectV2 } from '../Connectors/walletConnects2'
-import { getAddChainParameters } from '../../chains'
+import { metaMask } from '../../web3-lib/connectors'
+// import { walletConnectV2 } from '../../web3-lib/connectors'
+import { getAddChainParameters } from '../../web3-lib/chains'
 
 export const Connect = () => {
     const goBack = () => {

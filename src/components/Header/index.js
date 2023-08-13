@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Container from "../Container";
 import Logo from "../../assets/images/logo.png";
-import { hooks, metaMask } from '../Connectors/metaMask'
+import { hooksMetaMask } from '../../web3-lib/connectors'
+import { handleDisconnect } from '../../helpers/web3'
 import styles from "./styles.module.scss";
 
 export const Header = () => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
 
-    const { useAccounts } = hooks;
+    const { useAccounts } = hooksMetaMask;
     const accounts = useAccounts();
 
     return (
@@ -38,13 +39,7 @@ export const Header = () => {
                         <i className="icon-Notify" />
                         <button className={styles.header__bbtn}>Upload</button>
                         {accounts ?
-                            <button className={styles.header__wbtn} onClick={() => {
-                                if (metaMask?.deactivate) {
-                                    void metaMask.deactivate()
-                                } else {
-                                    void metaMask.resetState()
-                                }
-                            }}>
+                            <button className={styles.header__wbtn} onClick={handleDisconnect}>
                                 Disconnect
                             </button>
                             :
