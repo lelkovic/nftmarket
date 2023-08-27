@@ -51,8 +51,12 @@ export const Header = () => {
             {isMobileMenu && (
                 <div className={styles.mobileMenu}>
                     <nav>
-                        <a href="#Discover">Discover</a>
-                        <a href="#How-it-work">How it work</a>
+                        <a className={styles.header__ml32} href="#Discover">
+                            Discover
+                        </a>
+                        <a className={styles.header__ml32} href="#How-it-work">
+                            How it work
+                        </a>
                     </nav>
                     <div className={styles.mobileMenu__bottom}>
                         <button className={styles.mobileMenu__walletButton}>Connect Wallet</button>
