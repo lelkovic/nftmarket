@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { handleDisconnect } from "../../helpers/web3";
 import styles from "./styles.module.scss";
 import avatar from "../../assets/images/avatar.png";
+import Human from "../../assets/images/Human.png";
+import Image from "../../assets/images/Image.png";
+import LightBulb from "../../assets/images/LightBulb.png";
+import Disconnect from "../../assets/images/Disconnect.png";
 
 export const Profile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,16 +33,25 @@ export const Profile = () => {
                         </a>
                     </div>
                     <div className={styles.profile__item}>
+                        <img className={styles.profile__icon} src={Human} alt="logo" />
                         <a href="#">My Profile</a>
                     </div>
                     <div className={styles.profile__item}>
+                        <img className={styles.profile__icon} src={Image} alt="logo" />
                         <a href="#">My Items</a>
                     </div>
                     <div className={styles.profile__item}>
+                        <img className={styles.profile__icon} src={LightBulb} alt="logo" />
                         <p>Dark Theme</p>
+                        <button className={styles.profile__switch}>
+                            <span className={styles.profile__blueSwitch}></span>
+                        </button>
                     </div>
                     <div className={styles.profile__item}>
-                        <button onClick={handleDisconnect}>Disconnect</button>
+                        <img className={styles.profile__icon} src={Disconnect} alt="logo" />
+                        <button className={styles.profile__disconnect} onClick={handleDisconnect}>
+                            Disconnect
+                        </button>
                     </div>
                 </div>
             )}
