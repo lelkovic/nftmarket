@@ -9,6 +9,10 @@ import Disconnect from "../../assets/images/Disconnect.png";
 
 export const Profile = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isDark, setIsDark] = useState(false);
+    const themeSwitch = () => {
+        setIsDark(!isDark);
+    };
     return (
         <div className={styles.profile}>
             <button className={styles.profile__button} onClick={() => setIsOpen(!isOpen)}>
@@ -34,7 +38,7 @@ export const Profile = () => {
                     </div>
                     <div className={styles.profile__item}>
                         <img className={styles.profile__icon} src={Human} alt="logo" />
-                        <a href="#">My Profile</a>
+                        <a href="/profile">My Profile</a>
                     </div>
                     <div className={styles.profile__item}>
                         <img className={styles.profile__icon} src={Image} alt="logo" />
@@ -43,7 +47,10 @@ export const Profile = () => {
                     <div className={styles.profile__item}>
                         <img className={styles.profile__icon} src={LightBulb} alt="logo" />
                         <p>Dark Theme</p>
-                        <button className={styles.profile__switch}>
+                        <button
+                            onClick={() => themeSwitch()}
+                            className={`${styles.profile__switch} ${isDark ? styles.profile__switchActive : ""}`}
+                        >
                             <span className={styles.profile__blueSwitch}></span>
                         </button>
                     </div>

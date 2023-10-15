@@ -1,6 +1,7 @@
 import React from "react";
 import { HomePage } from "./pages/home/home";
 import { ConnectWallet } from "./pages/connectWallet/connectWallet";
+import { ProfilePage } from "./pages/profile/profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Web3Provider from "./components/Web3Provider";
 import { Layout } from "./components/Layout";
@@ -17,6 +18,7 @@ function App() {
                     <Routes>
                         <Route exact path="/" element={<HomePage />} />
                         <Route exact path="/connectWallet" element={<ConnectWallet />} />
+                        <Route exact path="/profile" element={<ProfilePage />} />
                         {/* <Route exact path="*" element={<NotFound />} /> */}
                     </Routes>
                 </Layout>

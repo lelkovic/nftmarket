@@ -3,6 +3,39 @@
 .profile {
     position: relative;
 
+    &__switch {
+        position: relative; 
+        display: flex;
+        background-color: $background_color;
+        border-radius: 32px;
+        width: 40px !important;
+        height: 20px !important;
+        padding: 4px !important;
+        span {
+            transition: all .5s;
+            position: absolute;
+            left: 4px;
+
+        }
+    }
+
+    &__blueSwitch{ 
+        display: block;
+        background: $button_background_1;
+        width: 12px;
+        height: 12px;
+        border-radius: 32px;
+
+    }
+
+    &__switchActive { 
+       span{ 
+        left: calc(100% - 4px); 
+        transform: translateX(-100%);
+
+       } 
+
+    }
 
     &__img {
         width: 32px;
@@ -143,24 +176,9 @@
 
     }
 
-    &__switch { 
-        display: flex;
-        background-color: $background_color;
-        border-radius: 32px;
-        width: 40px;
-        height: 20px;
+    
 
-        
-
-    }
-
-    &__blueSwitch{ 
-        display: block;
-        background: $button_background_1;
-        width: 12px;
-        height: 12px;
-
-    }
+    
 
     
 }
