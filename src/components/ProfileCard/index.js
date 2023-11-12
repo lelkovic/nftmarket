@@ -7,6 +7,7 @@ import instagram from "../../assets/images/instagram.svg";
 import coins from "../../assets/images/Coins.svg";
 import dots from "../../assets/images/Dots.svg";
 import share from "../../assets/images/Share.svg";
+import globe from "../../assets/images/Globe.png";
 
 export const ProfileCard = () => {
     return (
@@ -17,7 +18,9 @@ export const ProfileCard = () => {
                 0xc4c16a645...b21a <img src={coins} alt="coins" />
             </button>
             <p>A wholesome farm owner in Montana. Upcoming gallery solo show in Germany</p>
-            <a>https://ui8.net</a>
+            <a className={styles.profileCard__link}>
+                <img src={globe} alt="share" /> https://ui8.net
+            </a>
             <div className={styles.profileCard__options}>
                 <button className={styles.profileCard__primaryButton}>Follow</button>
                 <button className={styles.profileCard__secondaryButton}>
