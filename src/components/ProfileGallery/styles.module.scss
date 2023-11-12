@@ -1,17 +1,25 @@
 @import "../../assets/styles/index.scss";
 
-.container {
-   width: 100%;
-   padding: 0 15px;
-   margin: auto;
-   max-width: 341px;
-
-   @media (min-width: $tablet) {
-     padding: 0 20px;
-     max-width: 904px;
-   }
-
-   @media (min-width: $desktop) {
-      max-width: 1160px;
+.ProfileGallery{ 
+   padding: 64px 0 80px;
+   
+   &__tabs{ 
+      display: flex;
+      align-items: center;
+      button {
+         cursor: pointer;
+         background: transparent;
+         padding: 6px 12px; 
+            color: $text_color_2;
+         margin-right: 12px;
+         &:hover{
+            opacity: 0.8;
+         }
+      }
+      button.ProfileGallery__activeTab{ 
+         background: #353945;
+         color: $text_color_3; 
+         border-radius: 100px;
+      }
    }
 }
