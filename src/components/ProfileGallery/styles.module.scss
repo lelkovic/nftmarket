@@ -2,10 +2,13 @@
 
 .ProfileGallery{ 
    padding: 64px 0 80px;
+   width: 100%;
+   padding-left: 64px;
    
    &__tabs{ 
       display: flex;
       align-items: center;
+      margin-bottom: 32px;
       button {
          cursor: pointer;
          background: transparent;
@@ -21,5 +24,47 @@
          color: $text_color_3; 
          border-radius: 100px;
       }
+
+   }
+   &__galleryWrap{ 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+
+
+   }
+   &__item{ 
+      display: flex;
+      width: 30%;
+      flex-direction: column; 
+
+   }
+
+   &__itemImg{ 
+      width: 100%;
+      object-fit: cover;
+      height: 303px;
+      border-radius: 16px;
+
+   }
+
+   &__itemBlock { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__itemPrice{ 
+      padding: 8px;
+      border-radius: 4px;
+      border: 2px solid #45B26B;
+      color:#45B26B;
+   }
+
+   &__sep{ 
+      width: 100%;
+      height: 1px;
+      background-color:#E6E8EC;
    }
 }

@@ -1,0 +1,158 @@
+{
+  "gallery": [
+    {
+      "title": "OS Punks #164",
+      "collection": "OS Punks",
+      "img": "https://i.seadn.io/s/raw/files/ecbfeed53248353d50fcb54081ca80e0.png",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/78d57a2f8baa60f262eac62584e9c96d.png",
+        "https://i.seadn.io/s/raw/files/406f2199d9912a2297762c197fb27cd7.png",
+        "https://i.seadn.io/s/raw/files/9ebfc57613ff12f006b7512280bceb2e.png",
+        "https://i.seadn.io/s/raw/files/0bada7466dde1f8cac2d4204faadf8c4.png"
+      ],
+      "price": 2.45,
+      "highestBid": 0.001,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": true,
+        "likes": true,
+        "following": true,
+        "followers": true
+      }
+    },
+    {
+      "title": "OS Punks #525",
+      "collection": "OS Punks",
+      "img": "https://i.seadn.io/s/raw/files/db49e51f534bd8737024968a9f343590.png",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/406f2199d9912a2297762c197fb27cd7.png",
+        "https://i.seadn.io/s/raw/files/9ebfc57613ff12f006b7512280bceb2e.png",
+        "https://i.seadn.io/s/raw/files/0bada7466dde1f8cac2d4204faadf8c4.png"
+      ],
+      "price": 1.5,
+      "highestBid": 0.15,
+      "options": {
+        "onSale": true,
+        "collectibles": false,
+        "created": false,
+        "likes": false,
+        "following": false,
+        "followers": false
+      }
+    },
+    {
+      "title": "OS Punks #726",
+      "collection": "OS Punks",
+      "img": "https://i.seadn.io/s/raw/files/d8df6eba237af3a60b981d5113521c31.png",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/406f2199d9912a2297762c197fb27cd7.png",
+        "https://i.seadn.io/s/raw/files/9ebfc57613ff12f006b7512280bceb2e.png"
+      ],
+      "price": 5,
+      "highestBid": 2,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": false,
+        "likes": false,
+        "following": false,
+        "followers": false
+      }
+    },
+    {
+      "title": "Memeguard #2967",
+      "collection": "MemeGuards",
+      "img": "https://i.seadn.io/s/raw/files/3161491746f4e34b0fad95f0dcfcb141.jpg",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/9ebfc57613ff12f006b7512280bceb2e.png"
+      ],
+      "price": 2.65,
+      "highestBid": 0.04,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": true,
+        "likes": false,
+        "following": false,
+        "followers": false
+      }
+    },
+    {
+      "title": "Memeguard #869",
+      "collection": "MemeGuards",
+      "img": "https://i.seadn.io/s/raw/files/4017c67e20d0377ee6e52c7e55243912.jpg",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/78d57a2f8baa60f262eac62584e9c96d.png",
+        "https://i.seadn.io/s/raw/files/78d57a2f8baa60f262eac62584e9c96d.png",
+        "https://i.seadn.io/s/raw/files/78d57a2f8baa60f262eac62584e9c96d.png",
+        "https://i.seadn.io/s/raw/files/406f2199d9912a2297762c197fb27cd7.png",
+        "https://i.seadn.io/s/raw/files/9ebfc57613ff12f006b7512280bceb2e.png",
+        "https://i.seadn.io/s/raw/files/0bada7466dde1f8cac2d4204faadf8c4.png"
+      ],
+      "price": 2.355,
+      "highestBid": 0.425,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": true,
+        "likes": true,
+        "following": false,
+        "followers": false
+      }
+    },
+    {
+      "title": "Memeguard #2253",
+      "collection": "MemeGuards",
+      "img": "https://i.seadn.io/s/raw/files/b228b0dfeb81b12cd94023f6f2d7812f.jpg",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/ecc901b412e85ad5e032bdfae5f99cac.png"
+      ],
+      "price": 2.45,
+      "highestBid": 0.001,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": true,
+        "likes": true,
+        "following": true,
+        "followers": false
+      }
+    },
+    {
+      "title": "Memeguard #3189",
+      "collection": "MemeGuards",
+      "img": "https://i.seadn.io/s/raw/files/522debb4245ea30d595db1826c85094c.jpg",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/ecc901b412e85ad5e032bdfae5f99cac.png",
+        "https://i.seadn.io/s/raw/files/6e47850eeed7b0992a92201da7d8279d.png"
+      ],
+      "price": 0.196,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": true,
+        "likes": true,
+        "following": true,
+        "followers": true
+      }
+    },
+    {
+      "title": "Memeguard #1116",
+      "collection": "MemeGuards",
+      "img": "https://i.seadn.io/s/raw/files/52a52b5d47b20c7793bae2d796e69003.jpg",
+      "stock": [
+        "https://i.seadn.io/s/raw/files/947af88e16ff8ca6f145476535b3209d.png"
+      ],
+      "price": 0.2,
+      "options": {
+        "onSale": true,
+        "collectibles": true,
+        "created": true,
+        "likes": true,
+        "following": true,
+        "followers": true
+      }
+    }
+  ]
+}
