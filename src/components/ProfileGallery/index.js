@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { useState } from "react";
 import data from "./gallery.json";
+import loading from "../../assets/images/loading.png";
 
 export const ProfileGallery = () => {
     const gallery = data.gallery;
@@ -78,7 +79,9 @@ export const ProfileGallery = () => {
             </div>
             <div className={styles.ProfileGallery__galleryWrap}>{renderGallery()}</div>
 
-            <div className={styles.ProfileGallery__loader}></div>
+            <div className={styles.ProfileGallery__loader}>
+                <img src={loading} alt="Loading..." />
+            </div>
         </div>
     );
 };
