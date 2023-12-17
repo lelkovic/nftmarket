@@ -16,7 +16,25 @@ export const ProfileGallery = () => {
         ));
     };
     const renderGallery = () => {
-        return gallery.map((item, key) => (
+        const filteredGallery = gallery.filter((item) => {
+            switch (activeTab) {
+                case "On Sale":
+                    return item.options.onSale;
+                case "Collectibles":
+                    return item.options.collectibles;
+                case "Created":
+                    return item.options.created;
+                case "Likes":
+                    return item.options.likes;
+                case "Following":
+                    return item.options.following;
+                case "Followers":
+                    return item.options.followers;
+                default:
+                    return true;
+            }
+        });
+        return filteredGallery.map((item, key) => (
             <div key={key} className={styles.ProfileGallery__item}>
                 <img className={styles.ProfileGallery__itemImg} src={item.img} />
                 <div className={styles.ProfileGallery__itemBlock}>
